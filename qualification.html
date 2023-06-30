@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .qual-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .qual-card {
+    width: 100%;
+    border: 1px solid brown;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qual-card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .qual-card-content {
+    padding: 20px;
+    background-color: burlywood;
+  }
+  
+  .qual-card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .qual-card-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+</style>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Home</a>
+
+        <nav class="navbar">
+            <a href="qualification.html">Qualifications</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+  <h1>Qualifications</h1>
+
+  <div class = "qual-container">
+      <div class="qual-card">
+        <img src="images/school.jpg" alt="Card Image">
+        <div class="qual-card-content">
+          <h3 class="qual-card-title">High School</h3>
+          <p class="qual-card-description">Graduated High School from The New Indian School</p>
+        </div>
+
+        <div class="qual-card">
+        <img src="images/school.jpg" alt="Card Image">
+        <div class="qual-card-content">
+          <h3 class="qual-card-title">11th and 12th</h3>
+          <p class="qual-card-description">Graduated Pre-University from The New Indian School</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

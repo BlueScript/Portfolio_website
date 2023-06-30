@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,300&display=swap');
+      </style>
+    
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Home</a>
+
+        <nav class="navbar">
+            <a href="qualification.html">Qualifications</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+    
+    <div class = "image">
+        <div class="image-shape">
+            <img  src="images/pic.png" alt="Profile picture">
+            <p>Sheikh Fahad Ahmed</p>
+            <p>Visited: <span id="counter"></span></p>
+            <script>
+                // Retrieve the current count from local storage or initialize it to 0
+                let count = localStorage.getItem('pageCounter') || 0;
+            
+                // Update the counter element on the page
+                document.getElementById('counter').textContent = count;
+            
+                // Increment the count and update the counter on each page load
+                count++;
+                localStorage.setItem('pageCounter', count);
+              </script>
+            
+            
+                
+                
+        </div>
+    </div>
+    <hr style="border: 1px solid black;">
+
+    <div class="container">
+        <div class="content-section">
+            <div class="card">
+                <img src="images/diary.png" alt="Bio">
+                <form action="bio.html"><button>Bio</button></form>
+            </div>
+            <div class="card">
+                <img src="images/certificate.png" alt="Bio">
+                <form action="qualification.html"><button>Qualifications</button></form>
+            </div>
+            <div class="card">
+                <img src="images/daily-tasks.png" alt="Bio">
+                <form action="hobbies.html"><button >Hobbies</button></form>
+            </div>
+            <div class="card">
+                <img src="images/gallery.png" alt="Bio">
+                <form action="gallery.html"><button>Gallery</button></form>
+            </div>
+            <div class="card">
+                <img src="images/email.png" alt="Bio">
+                <form action="contact.html"><button>Contact</button></form>
+            </div>
+            <div class="card">
+                <img src="images/online-registration.png" alt="Bio">
+                <form action="Enquiry.html"><button>Enquiry</button></form>
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
